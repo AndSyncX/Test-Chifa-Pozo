@@ -1,4 +1,4 @@
-package com.chifa.chifapozo.infrastructure.adapter;
+package com.chifa.chifapozo.infrastructure.adapter.dish;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(schema = "chifapozo", name = "dishes")
-public class Dish {
+public class DishData {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
