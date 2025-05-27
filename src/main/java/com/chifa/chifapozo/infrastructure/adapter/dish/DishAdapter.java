@@ -19,7 +19,7 @@ public class DishAdapter implements DishRepository {
     public List<Dish> findAll() {
         return repository.findAll()
                 .stream()
-                .filter(dishData -> !dishData.isAvailable())
+               /* .filter(dishData -> !dishData.isAvailable())*/
                 .map(mapper::toDomain)
                 .toList();
     }
